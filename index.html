@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abner Pena de Souza — Engenheiro de Software</title>
+<meta name="description" content="Portfólio de carreira de Abner Pena de Souza: da assistência técnica à engenharia de software backend.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" id="topo">
+  <nav class="nav" aria-label="Navegação principal">
+    <a href="#inicio" class="logo">AP<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio" class="nav-link">Início</a></li>
+      <li><a href="#sobre" class="nav-link">Sobre</a></li>
+      <li><a href="#trajetoria" class="nav-link">Trajetória</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contato" class="nav-link nav-cta">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="inicio">
+    <canvas id="networkCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content container">
+      <p class="hero-eyebrow">Porto Alegre, RS — Brasil</p>
+      <h1 class="hero-title">Abner Pena de Souza</h1>
+      <p class="hero-role">
+        <span class="hero-role-prefix">&gt;</span>
+        <span id="roleTyped" class="hero-role-typed"></span><span class="hero-caret" aria-hidden="true"></span>
+      </p>
+      <p class="hero-lede">
+        Comecei consertando celulares e computadores, passei pelo cabeamento e pela infraestrutura de rede,
+        e desde 2020 construo sistemas backend — hoje no ecossistema de Parceiros do iFood. Essa página conta
+        esse caminho.
+      </p>
+      <div class="hero-actions">
+        <a href="#trajetoria" class="btn btn-primary">Ver trajetória</a>
+        <a href="#contato" class="btn btn-ghost">Contato</a>
+      </div>
+      <div class="hero-social" aria-label="Redes sociais">
+        <a href="https://github.com/abnerpsouza99" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/abnerpenadesouza" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:abnerpsouza99@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6l8.4 6.3L20.4 6ZM3 7.5V18h18V7.5l-8.4 6.3a1 1 0 0 1-1.2 0L3 7.5Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <p class="section-eyebrow">01 — Sobre mim</p>
+      <h2 class="section-title">Fora do teclado</h2>
+      <div class="about-grid">
+        <div class="about-intro reveal">
+          <div class="about-avatar" aria-hidden="true">AP</div>
+          <p class="about-text">
+            Sou gaúcho de Porto Alegre, formado em Análise e Desenvolvimento de Sistemas pela Uniritter/FAPA.
+            Antes de escrever a primeira linha de código profissionalmente, passei anos com a mão na massa:
+            conserto de smartphone e computador, cabo de rede, manutenção de servidor, suporte técnico. Isso
+            molda como eu programo até hoje — gosto de entender o sistema de ponta a ponta, do hardware ao
+            endpoint da API. Fora do trabalho, o que me move é bem simples.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card reveal">
+            <div class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-9.8-9.1C.6 8.4 2.4 5 6 5c2.1 0 3.5 1.2 6 3.7C14.5 6.2 15.9 5 18 5c3.6 0 5.4 3.4 3.8 6.9C19.5 16.4 12 21 12 21Z"/></svg>
+            </div>
+            <h3>Família</h3>
+            <p>Tempo com quem importa é o que carrega o resto — meu combustível fora da tela.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6 15 9l-1.1 3.5H10.1L9 9l3-2.4ZM12 21v-3.3M4.2 9.3l3.3 1M20 9.3l-3.3 1M4.6 16l2.9-2M19.6 16l-2.9-2"/></svg>
+            </div>
+            <h3>Futebol</h3>
+            <p>Gremista, jogo quando dá e assisto sempre — bom debug mental depois de um jogo.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="7" width="19" height="11" rx="4"/><path d="M8 10.5v4M6 12.5h4"/><circle cx="16" cy="10.8" r=".9" fill="currentColor" stroke="none"/><circle cx="18.2" cy="13" r=".9" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Games</h3>
+            <p>Jogador desde sempre — tem coisa melhor pra treinar lógica e paciência com bug?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="trajetoria">
+    <div class="container">
+      <p class="section-eyebrow">02 — Trajetória</p>
+      <h2 class="section-title">Do hardware ao backend</h2>
+      <p class="section-lede reveal">Quatro fases, uma linha só. Cada uma puxou a próxima.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-phase" style="--phase-color:var(--c-phase1)">
+          <div class="timeline-phase-header reveal">
+            <span class="timeline-phase-dot"></span>
+            <div>
+              <span class="timeline-phase-period">2014 — 2019</span>
+              <h3 class="timeline-phase-title">Primeiros passos &amp; assistência técnica</h3>
+            </div>
+          </div>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>MobileHelp</h4>
+                <span class="timeline-period">2017 — 2018</span>
+              </div>
+              <p class="timeline-office">Técnico em Informática</p>
+              <p>Conserto de smartphones e atendimento ao cliente — o primeiro contato direto com hardware sob pressão de prazo.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Makrovision</h4>
+                <span class="timeline-period">2018 — 2019</span>
+              </div>
+              <p class="timeline-office">Auxiliar Comercial</p>
+              <p>Suporte a arquitetos e controle de agenda — uma passagem administrativa entre o técnico e a infraestrutura.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Prefeitura de Porto Alegre</h4>
+                <span class="timeline-period">2016</span>
+              </div>
+              <p class="timeline-office">Estagiário</p>
+              <p>Controle do laboratório de informática em escolas públicas.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Senac — C&amp;A Modas</h4>
+                <span class="timeline-period">2014 — 2015</span>
+              </div>
+              <p class="timeline-office">Jovem Aprendiz</p>
+              <p>Atendimento ao cliente e controle de estoque — o começo de tudo.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-phase" style="--phase-color:var(--c-phase2)">
+          <div class="timeline-phase-header reveal">
+            <span class="timeline-phase-dot"></span>
+            <div>
+              <span class="timeline-phase-period">2019 — 2020</span>
+              <h3 class="timeline-phase-title">Redes &amp; infraestrutura de TI</h3>
+            </div>
+          </div>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>DropReal Brasil</h4>
+                <span class="timeline-period">2020</span>
+              </div>
+              <p class="timeline-office">Analista de Suporte I</p>
+              <p>Suporte à gestão de rede da empresa e monitoramento de servidores e serviços. Suporte técnico para software, hardware e demais recursos de TI.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Sicred Tecnologia Financeira</h4>
+                <span class="timeline-period">2019 — 2020</span>
+              </div>
+              <p class="timeline-office">Auxiliar de Infraestrutura de TI</p>
+              <p>Análise, monitoramento e manutenção de rede. Configuração de rede e servidores — TCP/IP, DNS, DHCP, VPNs, Active Directory. Suporte técnico e manutenção de desktops e notebooks. Apoio na condução das cerimônias de Sprint do setor.</p>
+              <div class="timeline-tags">
+                <span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>VPN</span><span>Active Directory</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-phase" style="--phase-color:var(--c-phase3)">
+          <div class="timeline-phase-header reveal">
+            <span class="timeline-phase-dot"></span>
+            <div>
+              <span class="timeline-phase-period">2020 — 2021</span>
+              <h3 class="timeline-phase-title">Início em desenvolvimento</h3>
+            </div>
+          </div>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>ADP Brasil</h4>
+                <span class="timeline-period">2021</span>
+              </div>
+              <p class="timeline-office">Software Developer II</p>
+              <p>Desenvolvimento de melhorias e correções no software de folha de pagamento eXpert.</p>
+              <div class="timeline-tags">
+                <span>JavaScript</span><span>Java</span><span>Progress</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Saque e Pague — Auto Atendimento</h4>
+                <span class="timeline-period">2020 — 2021</span>
+              </div>
+              <p class="timeline-office">Software Developer I</p>
+              <p>Desenvolvimento de novas soluções para o varejo e suporte aos sistemas da empresa: back-end em Java (API REST com Spring Boot), front-end em React.js e AngularJS, e back-end de ATMs em C++ e Node.js. Banco Oracle, ambientes provisionados com Docker.</p>
+              <div class="timeline-tags">
+                <span>Java</span><span>Spring Boot</span><span>React.js</span><span>AngularJS</span><span>C++</span><span>Node.js</span><span>Oracle</span><span>Docker</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-phase" style="--phase-color:var(--c-phase4)">
+          <div class="timeline-phase-header reveal">
+            <span class="timeline-phase-dot"></span>
+            <div>
+              <span class="timeline-phase-period">2021 — hoje</span>
+              <h3 class="timeline-phase-title">Engenharia de software</h3>
+            </div>
+          </div>
+
+          <article class="timeline-item timeline-item-current reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>iFood <span class="badge-current">atual</span></h4>
+                <span class="timeline-period">2024 — hoje</span>
+              </div>
+              <p class="timeline-office">Backend Engineer</p>
+              <p>Desenvolvimento e manutenção de serviços backend para o ecossistema de Parceiros. Kotlin com Spring Boot, Postgres para dados relacionais e DynamoDB/MongoDB para não relacionais. Comunicação assíncrona com SQS e Kafka, S3 para assets e Athena para relatórios. Testes com Mockito e JUnit, com pipelines dedicados de regressão.</p>
+              <div class="timeline-tags">
+                <span>Kotlin</span><span>Spring Boot</span><span>PostgreSQL</span><span>DynamoDB</span><span>MongoDB</span><span>SQS</span><span>Kafka</span><span>AWS S3</span><span>Athena</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Lama Technology Group (Lama App)</h4>
+                <span class="timeline-period">2021 — 2024</span>
+              </div>
+              <p class="timeline-office">Backend Engineer</p>
+              <p>Sistemas em arquitetura de microsserviços distribuídos em Kubernetes. Fluxo de transações FIAT, OTC, suporte in-app (chat e chamadas), integração com Open Banking e fluxo de KYC para verificação de documentos.</p>
+              <div class="timeline-tags">
+                <span>TypeScript</span><span>NestJS</span><span>TypeORM</span><span>Java</span><span>Spring Boot</span><span>JPA/Hibernate</span><span>PostgreSQL</span><span>MongoDB</span><span>RabbitMQ</span><span>Kubernetes</span><span>AWS S3</span><span>Jest</span><span>JUnit</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow">03 — Skills</p>
+      <h2 class="section-title">Caixa de ferramentas</h2>
+
+      <div class="skills-grid">
+        <div class="skills-group reveal">
+          <h3>Linguagens &amp; Frameworks</h3>
+          <div class="chip-row">
+            <span class="chip">Kotlin</span><span class="chip">TypeScript</span><span class="chip">Java</span>
+            <span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">NestJS</span>
+            <span class="chip">Spring Boot</span><span class="chip">React.js</span><span class="chip">AngularJS</span>
+            <span class="chip">C</span><span class="chip">C++</span>
+          </div>
+        </div>
+        <div class="skills-group reveal">
+          <h3>Dados</h3>
+          <div class="chip-row">
+            <span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">DynamoDB</span>
+            <span class="chip">MySQL</span><span class="chip">Oracle</span>
+          </div>
+        </div>
+        <div class="skills-group reveal">
+          <h3>Infraestrutura &amp; Cloud</h3>
+          <div class="chip-row">
+            <span class="chip">AWS S3</span><span class="chip">AWS SQS</span><span class="chip">Athena</span>
+            <span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Kafka</span><span class="chip">RabbitMQ</span>
+          </div>
+        </div>
+        <div class="skills-group reveal">
+          <h3>Redes &amp; Sistemas</h3>
+          <div class="chip-row">
+            <span class="chip">TCP/IP</span><span class="chip">DNS</span><span class="chip">DHCP</span>
+            <span class="chip">VPN</span><span class="chip">Active Directory</span>
+          </div>
+        </div>
+        <div class="skills-group reveal">
+          <h3>Qualidade &amp; Práticas</h3>
+          <div class="chip-row">
+            <span class="chip">Jest</span><span class="chip">JUnit</span><span class="chip">Mockito</span>
+            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitLab</span><span class="chip">Scrum</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="education reveal">
+        <h3>Formação &amp; certificações</h3>
+        <ul class="education-list">
+          <li><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> — Uniritter · FAPA</li>
+          <li><strong>Técnico em Informática</strong> — Senac Informática, 2017</li>
+          <li><strong>Scrum Foundation Professional Certificate</strong></li>
+          <li>Técnico Auxiliar de Suporte e Manutenção de Computadores</li>
+          <li>Técnico Auxiliar de Redes de Computadores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contato">
+    <div class="container">
+      <p class="section-eyebrow">04 — Contato</p>
+      <h2 class="section-title">Vamos conversar</h2>
+      <p class="section-lede reveal">Aberto a oportunidades e a bater um papo sobre backend, dados ou a próxima fase da trajetória.</p>
+      <div class="contact-grid reveal">
+        <a class="contact-card" href="mailto:abnerpsouza99@gmail.com">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6l8.4 6.3L20.4 6ZM3 7.5V18h18V7.5l-8.4 6.3a1 1 0 0 1-1.2 0L3 7.5Z" fill="currentColor" stroke="none"/></svg>
+          <span>abnerpsouza99@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/abnerpenadesouza" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          <span>linkedin.com/in/abnerpenadesouza</span>
+        </a>
+        <a class="contact-card" href="https://github.com/abnerpsouza99" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          <span>github.com/abnerpsouza99</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>Abner Pena de Souza — Porto Alegre, RS</span>
+    <span id="year"></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
