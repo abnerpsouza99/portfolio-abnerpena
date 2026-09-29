@@ -36,6 +36,7 @@
   <section class="hero" id="inicio">
     <canvas id="networkCanvas" class="hero-canvas" aria-hidden="true"></canvas>
     <div class="hero-content container">
+      <div class="hero-text">
       <p class="hero-eyebrow">Porto Alegre, RS — Brasil</p>
       <h1 class="hero-title">Abner Pena de Souza</h1>
       <p class="hero-role">
@@ -62,6 +63,10 @@
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6l8.4 6.3L20.4 6ZM3 7.5V18h18V7.5l-8.4 6.3a1 1 0 0 1-1.2 0L3 7.5Z"/></svg>
         </a>
       </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/abner.jpg" alt="Foto de Abner Pena de Souza" width="720" height="720" fetchpriority="high" decoding="async">
+      </figure>
     </div>
     <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
       <span></span>
@@ -74,7 +79,6 @@
       <h2 class="section-title">Fora do teclado</h2>
       <div class="about-grid">
         <div class="about-intro reveal">
-          <div class="about-avatar" aria-hidden="true">AP</div>
           <p class="about-text">
             Sou gaúcho de Porto Alegre, formado em Análise e Desenvolvimento de Sistemas pela Uniritter/FAPA.
             Antes de escrever a primeira linha de código profissionalmente, passei anos com a mão na massa:
@@ -114,100 +118,45 @@
     <div class="container">
       <p class="section-eyebrow">02 — Trajetória</p>
       <h2 class="section-title">Do hardware ao backend</h2>
-      <p class="section-lede reveal">Quatro fases, uma linha só. Cada uma puxou a próxima.</p>
+      <p class="section-lede reveal">Quatro fases, uma linha só — do mais recente ao começo de tudo.</p>
 
       <div class="timeline">
 
-        <div class="timeline-phase" style="--phase-color:var(--c-phase1)">
+        <div class="timeline-phase" style="--phase-color:var(--c-phase4)">
           <div class="timeline-phase-header reveal">
             <span class="timeline-phase-dot"></span>
             <div>
-              <span class="timeline-phase-period">2014 — 2019</span>
-              <h3 class="timeline-phase-title">Primeiros passos &amp; assistência técnica</h3>
+              <span class="timeline-phase-period">2021 — hoje</span>
+              <h3 class="timeline-phase-title">Engenharia de software</h3>
             </div>
           </div>
 
-          <article class="timeline-item reveal">
+          <article class="timeline-item timeline-item-current reveal">
             <div class="timeline-node"></div>
             <div class="timeline-card">
               <div class="timeline-card-head">
-                <h4>MobileHelp</h4>
-                <span class="timeline-period">2017 — 2018</span>
+                <h4>iFood <span class="badge-current">atual</span></h4>
+                <span class="timeline-period">2024 — hoje</span>
               </div>
-              <p class="timeline-office">Técnico em Informática</p>
-              <p>Conserto de smartphones e atendimento ao cliente — o primeiro contato direto com hardware sob pressão de prazo.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-node"></div>
-            <div class="timeline-card">
-              <div class="timeline-card-head">
-                <h4>Makrovision</h4>
-                <span class="timeline-period">2018 — 2019</span>
-              </div>
-              <p class="timeline-office">Auxiliar Comercial</p>
-              <p>Suporte a arquitetos e controle de agenda — uma passagem administrativa entre o técnico e a infraestrutura.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-node"></div>
-            <div class="timeline-card">
-              <div class="timeline-card-head">
-                <h4>Prefeitura de Porto Alegre</h4>
-                <span class="timeline-period">2016</span>
-              </div>
-              <p class="timeline-office">Estagiário</p>
-              <p>Controle do laboratório de informática em escolas públicas.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-node"></div>
-            <div class="timeline-card">
-              <div class="timeline-card-head">
-                <h4>Senac — C&amp;A Modas</h4>
-                <span class="timeline-period">2014 — 2015</span>
-              </div>
-              <p class="timeline-office">Jovem Aprendiz</p>
-              <p>Atendimento ao cliente e controle de estoque — o começo de tudo.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="timeline-phase" style="--phase-color:var(--c-phase2)">
-          <div class="timeline-phase-header reveal">
-            <span class="timeline-phase-dot"></span>
-            <div>
-              <span class="timeline-phase-period">2019 — 2020</span>
-              <h3 class="timeline-phase-title">Redes &amp; infraestrutura de TI</h3>
-            </div>
-          </div>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-node"></div>
-            <div class="timeline-card">
-              <div class="timeline-card-head">
-                <h4>DropReal Brasil</h4>
-                <span class="timeline-period">2020</span>
-              </div>
-              <p class="timeline-office">Analista de Suporte I</p>
-              <p>Suporte à gestão de rede da empresa e monitoramento de servidores e serviços. Suporte técnico para software, hardware e demais recursos de TI.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-node"></div>
-            <div class="timeline-card">
-              <div class="timeline-card-head">
-                <h4>Sicred Tecnologia Financeira</h4>
-                <span class="timeline-period">2019 — 2020</span>
-              </div>
-              <p class="timeline-office">Auxiliar de Infraestrutura de TI</p>
-              <p>Análise, monitoramento e manutenção de rede. Configuração de rede e servidores — TCP/IP, DNS, DHCP, VPNs, Active Directory. Suporte técnico e manutenção de desktops e notebooks. Apoio na condução das cerimônias de Sprint do setor.</p>
+              <p class="timeline-office">Backend Engineer</p>
+              <p>Desenvolvimento e manutenção de serviços backend para o ecossistema de Parceiros. Kotlin com Spring Boot, Postgres para dados relacionais e DynamoDB/MongoDB para não relacionais. Comunicação assíncrona com SQS e Kafka, S3 para assets e Athena para relatórios. Testes com Mockito e JUnit, com pipelines dedicados de regressão.</p>
               <div class="timeline-tags">
-                <span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>VPN</span><span>Active Directory</span>
+                <span>Kotlin</span><span>Spring Boot</span><span>PostgreSQL</span><span>DynamoDB</span><span>MongoDB</span><span>SQS</span><span>Kafka</span><span>AWS S3</span><span>Athena</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Lama Technology Group (Lama App)</h4>
+                <span class="timeline-period">2021 — 2024</span>
+              </div>
+              <p class="timeline-office">Backend Engineer</p>
+              <p>Sistemas em arquitetura de microsserviços distribuídos em Kubernetes. Fluxo de transações FIAT, OTC, suporte in-app (chat e chamadas), integração com Open Banking e fluxo de KYC para verificação de documentos.</p>
+              <div class="timeline-tags">
+                <span>TypeScript</span><span>NestJS</span><span>TypeORM</span><span>Java</span><span>Spring Boot</span><span>JPA/Hibernate</span><span>PostgreSQL</span><span>MongoDB</span><span>RabbitMQ</span><span>Kubernetes</span><span>AWS S3</span><span>Jest</span><span>JUnit</span>
               </div>
             </div>
           </article>
@@ -253,27 +202,24 @@
           </article>
         </div>
 
-        <div class="timeline-phase" style="--phase-color:var(--c-phase4)">
+        <div class="timeline-phase" style="--phase-color:var(--c-phase2)">
           <div class="timeline-phase-header reveal">
             <span class="timeline-phase-dot"></span>
             <div>
-              <span class="timeline-phase-period">2021 — hoje</span>
-              <h3 class="timeline-phase-title">Engenharia de software</h3>
+              <span class="timeline-phase-period">2019 — 2020</span>
+              <h3 class="timeline-phase-title">Redes &amp; infraestrutura de TI</h3>
             </div>
           </div>
 
-          <article class="timeline-item timeline-item-current reveal">
+          <article class="timeline-item reveal">
             <div class="timeline-node"></div>
             <div class="timeline-card">
               <div class="timeline-card-head">
-                <h4>iFood <span class="badge-current">atual</span></h4>
-                <span class="timeline-period">2024 — hoje</span>
+                <h4>DropReal Brasil</h4>
+                <span class="timeline-period">2020</span>
               </div>
-              <p class="timeline-office">Backend Engineer</p>
-              <p>Desenvolvimento e manutenção de serviços backend para o ecossistema de Parceiros. Kotlin com Spring Boot, Postgres para dados relacionais e DynamoDB/MongoDB para não relacionais. Comunicação assíncrona com SQS e Kafka, S3 para assets e Athena para relatórios. Testes com Mockito e JUnit, com pipelines dedicados de regressão.</p>
-              <div class="timeline-tags">
-                <span>Kotlin</span><span>Spring Boot</span><span>PostgreSQL</span><span>DynamoDB</span><span>MongoDB</span><span>SQS</span><span>Kafka</span><span>AWS S3</span><span>Athena</span>
-              </div>
+              <p class="timeline-office">Analista de Suporte I</p>
+              <p>Suporte à gestão de rede da empresa e monitoramento de servidores e serviços. Suporte técnico para software, hardware e demais recursos de TI.</p>
             </div>
           </article>
 
@@ -281,14 +227,72 @@
             <div class="timeline-node"></div>
             <div class="timeline-card">
               <div class="timeline-card-head">
-                <h4>Lama Technology Group (Lama App)</h4>
-                <span class="timeline-period">2021 — 2024</span>
+                <h4>Sicred Tecnologia Financeira</h4>
+                <span class="timeline-period">2019 — 2020</span>
               </div>
-              <p class="timeline-office">Backend Engineer</p>
-              <p>Sistemas em arquitetura de microsserviços distribuídos em Kubernetes. Fluxo de transações FIAT, OTC, suporte in-app (chat e chamadas), integração com Open Banking e fluxo de KYC para verificação de documentos.</p>
+              <p class="timeline-office">Auxiliar de Infraestrutura de TI</p>
+              <p>Análise, monitoramento e manutenção de rede. Configuração de rede e servidores — TCP/IP, DNS, DHCP, VPNs, Active Directory. Suporte técnico e manutenção de desktops e notebooks. Apoio na condução das cerimônias de Sprint do setor.</p>
               <div class="timeline-tags">
-                <span>TypeScript</span><span>NestJS</span><span>TypeORM</span><span>Java</span><span>Spring Boot</span><span>JPA/Hibernate</span><span>PostgreSQL</span><span>MongoDB</span><span>RabbitMQ</span><span>Kubernetes</span><span>AWS S3</span><span>Jest</span><span>JUnit</span>
+                <span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>VPN</span><span>Active Directory</span>
               </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-phase" style="--phase-color:var(--c-phase1)">
+          <div class="timeline-phase-header reveal">
+            <span class="timeline-phase-dot"></span>
+            <div>
+              <span class="timeline-phase-period">2014 — 2019</span>
+              <h3 class="timeline-phase-title">Primeiros passos &amp; assistência técnica</h3>
+            </div>
+          </div>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Makrovision</h4>
+                <span class="timeline-period">2018 — 2019</span>
+              </div>
+              <p class="timeline-office">Auxiliar Comercial</p>
+              <p>Suporte a arquitetos e controle de agenda — uma passagem administrativa entre o técnico e a infraestrutura.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>MobileHelp</h4>
+                <span class="timeline-period">2017 — 2018</span>
+              </div>
+              <p class="timeline-office">Técnico em Informática</p>
+              <p>Conserto de smartphones e atendimento ao cliente — o primeiro contato direto com hardware sob pressão de prazo.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Prefeitura de Porto Alegre</h4>
+                <span class="timeline-period">2016</span>
+              </div>
+              <p class="timeline-office">Estagiário</p>
+              <p>Controle do laboratório de informática em escolas públicas.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <h4>Senac — C&amp;A Modas</h4>
+                <span class="timeline-period">2014 — 2015</span>
+              </div>
+              <p class="timeline-office">Jovem Aprendiz</p>
+              <p>Atendimento ao cliente e controle de estoque — o começo de tudo.</p>
             </div>
           </article>
         </div>
@@ -303,6 +307,13 @@
       <h2 class="section-title">Caixa de ferramentas</h2>
 
       <div class="skills-grid">
+        <div class="skills-group skills-group-highlight reveal">
+          <h3>IA &amp; Desenvolvimento Assistido</h3>
+          <div class="chip-row">
+            <span class="chip">Claude Code</span><span class="chip">Windsurf</span><span class="chip">MCP (Model Context Protocol)</span>
+            <span class="chip">Agentes de IA</span><span class="chip">Prompt Engineering</span><span class="chip">Claude API</span>
+          </div>
+        </div>
         <div class="skills-group reveal">
           <h3>Linguagens &amp; Frameworks</h3>
           <div class="chip-row">
