@@ -31,7 +31,7 @@
     'about.text': 'I\'m from Porto Alegre, in southern Brazil, with a degree in Systems Analysis and Development from Uniritter/FAPA. Before writing my first line of code professionally, I spent years hands-on: repairing smartphones and computers, running network cables, maintaining servers, doing tech support. That still shapes how I code today — I like to understand a system end to end, from the hardware to the API endpoint. Outside of work, what drives me is pretty simple.',
     'about.family.title': 'Family',
     'about.family.text': 'Time with the people who matter is what carries everything else — my fuel away from the screen.',
-    'about.football.title': 'Football',
+    'about.football.title': 'Soccer',
     'about.football.text': 'Grêmio fan, I play when I can and watch every match — great mental debugging after a game.',
     'about.games.title': 'Games',
     'about.games.text': 'A gamer since forever — is there a better way to train logic and patience with bugs?',
