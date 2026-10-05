@@ -33,18 +33,15 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealEls.forEach((el) => revealObserver.observe(el));
 
 // ---------- Typed role rotator ----------
-const roles = [
-  'técnico de hardware',
-  'técnico de redes & infraestrutura',
-  'desenvolvedor de software',
-  'engenheiro de backend',
-];
+// Os cargos vêm do i18n.js, no idioma ativo.
 const typedEl = document.getElementById('roleTyped');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+let roles = window.i18n.roles();
 let roleIndex = 0;
 let charIndex = 0;
 let deleting = false;
+let typeTimer = null;
 
 function typeLoop() {
   const current = roles[roleIndex];
@@ -55,7 +52,7 @@ function typeLoop() {
     if (charIndex === current.length) {
       const isLast = roleIndex === roles.length - 1;
       deleting = !isLast;
-      setTimeout(typeLoop, isLast ? 0 : 1600);
+      if (!isLast) typeTimer = setTimeout(typeLoop, 1600);
       return;
     }
   } else {
@@ -67,15 +64,27 @@ function typeLoop() {
     }
   }
 
-  setTimeout(typeLoop, deleting ? 35 : 65);
+  typeTimer = setTimeout(typeLoop, deleting ? 35 : 65);
 }
 
-if (typedEl) {
+function startRoles() {
+  clearTimeout(typeTimer);
+  roles = window.i18n.roles();
+  roleIndex = 0;
+  charIndex = 0;
+  deleting = false;
+
   if (prefersReducedMotion) {
     typedEl.textContent = roles[roles.length - 1];
   } else {
+    typedEl.textContent = '';
     typeLoop();
   }
+}
+
+if (typedEl) {
+  startRoles();
+  document.addEventListener('languagechange', startRoles);
 }
 
 // ---------- Hero network canvas ----------
